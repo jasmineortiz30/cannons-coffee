@@ -1,63 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  font-family: Poppins;
-  font-size: 1.125rem;
-  color: black;
-  background-color: #063270;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  font-family: Poppins;
-  max-width: 1200px;
-  padding: 0;
-  margin: 0 auto;
-}
-
-main {
-  background-color: white;
-  padding: 4rem;
-  text-align: center;
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
-}
-header {
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-h1 {
-  font-weight: 300;
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 :root {
   --black: #000000;
   --catalina: #06327d;
@@ -66,89 +8,103 @@ h1 {
   --sunglow: #ffd034;
   --white: #ffffff;
   --lightblue: #cadbf8;
+  --mainfont: "Poppins", sans-serif;
 }
 
-h1 {
-  font-family: "Poppins";
-  font-size: 2rem;
-  line-height: 1.1667;
-  font-weight: normal;
-  margin: 0;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-h2 {
-  font-family: "Poppins";
-  font-size: 2.5rem;
-  line-height: 1.1667;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-family: "Poppins";
-  font-size: 1.75rem;
-  line-height: 1.1667;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  margin-top: 4rem;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-a {
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-img {
-  border-radius: 8px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.container {
-  max-width: 1000px;
-  padding: 2rem;
-}
-
-header {
-  background-color: var(--catalina);
-  color: var(--white);
-  border-bottom: 4px var(--sunglow) solid;
+.top-nav {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding: 2rem;
-  margin: 0;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-
-  flex-flow: row wrap;
+  justify-content: center;
   gap: 1rem;
 }
-.hot {
-  background: #acc9fb;
-  color: black;
+
+.latte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--white);
+}
+
+.latte h2 {
+  grid-column: 2/3;
+  padding-left: 2rem;
+  font-weight: normal;
+}
+
+.latte img {
+  grid-column: 1/2;
+  max-width: 100%;
+  grid-row: 1/4;
+  padding: 1rem;
+}
+
+.latte p {
+  padding-left: 2rem;
 }
 
 .button {
+  grid-column: 2/3;
+  grid-row: 2/3;
   background-color: var(--vegan);
-  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
 }
-.button2 {
+
+header {
+  background: var(--catalina);
+  border-bottom: var(--sunglow) solid 0.5rem;
+}
+header h1 {
+  color: var(--white);
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  font-family: var(--mainfont);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+footer {
+  background-color: var(--catalina);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1 rem;
+  border-top: var(--sunglow) 0.5rem solid;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    margin: 0;
+    padding-top: 2.7rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
   background-color: var(--catalina);
   padding: 0.5rem;
 }
@@ -176,7 +132,7 @@ footer {
   font-size: 8px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   header {
     justify-content: center;
   }
@@ -232,7 +188,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    /*     background-color: red; */
+    /*    
   }
 
   .menu h1 {
