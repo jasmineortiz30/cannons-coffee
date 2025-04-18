@@ -10,6 +10,16 @@
   --lightblue: #cadbf8;
   --mainfont: "Poppins", sans-serif;
 }
+img {
+  border-radius: 1rem;
+}
+.warm {
+  max-width: 100%;
+}
+.logo {
+  display: flex;
+  flex-flow: row-wrap;
+}
 
 .top-nav {
   display: flex;
@@ -17,32 +27,30 @@
   gap: 1rem;
 }
 
-.latte {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.hot {
   background: var(--white);
 }
 
-.latte h2 {
+.hot h1 {
   grid-column: 2/3;
   padding-left: 2rem;
   font-weight: normal;
 }
 
-.latte img {
+.hot img {
   grid-column: 1/2;
   max-width: 100%;
   grid-row: 1/4;
   padding: 1rem;
 }
 
-.latte p {
+.hot p {
   padding-left: 2rem;
 }
-
+.main {
+  background-color: #cadbf7;
+}
 .button {
-  grid-column: 2/3;
-  grid-row: 2/3;
   background-color: var(--vegan);
   text-decoration: none;
   color: var(--white);
@@ -53,8 +61,6 @@
 header {
   background: var(--catalina);
   border-bottom: var(--sunglow) solid 0.5rem;
-  display: inline-block;
-  width: 50em;
 }
 header h1 {
   color: var(--white);
@@ -66,7 +72,7 @@ nav ul {
   list-style: none;
   gap: 1rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 nav a {
@@ -81,13 +87,6 @@ body {
   padding: 0;
   margin: 0;
 }
-footer {
-  background-color: var(--catalina);
-  color: var(--white);
-  text-align: center;
-  padding-bottom: 1 rem;
-  border-top: var(--sunglow) 0.5rem solid;
-}
 
 @media (min-width: 1000px) {
   nav {
@@ -100,10 +99,32 @@ footer {
     margin: 0;
     padding-top: 2.7rem;
   }
-
   header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+footer {
+  background-color: var(--catalina);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1rem;
+  border-top: var(--sunglow) 0.5rem solid;
+}
+@media (min-width: 650px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
   }
 }
 
@@ -134,6 +155,7 @@ footer {
 
 .latte h2 {
   grid-column: 2/3;
+
   padding-left: 2rem;
   font-weight: normal;
 }
