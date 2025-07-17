@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: var(--sans);
+font-family: var(--mainfont);
   padding: 0;
   margin: 0;
   font-size: 1.125rem;
@@ -67,7 +67,7 @@ nav a:hover {
   color: var(--sunglow);
 }
 main {
-  padding: 3rem;
+  padding: 0rem;
   background-color: var(--lightblue);
   gap: 2rem;
 }
