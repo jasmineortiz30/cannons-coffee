@@ -50,6 +50,7 @@ h2 {
 
 img {
   max-width: 100%;
+ border-radius: 8px;
 }
 
 .logo {
@@ -97,8 +98,8 @@ main {
 .coffee-and-code {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 3rem;
+  gap: 1rem;
+  padding: 0rem;
   align-items: center;
   background-color: var(--white);
 }
@@ -118,6 +119,7 @@ main {
   margin-top: 1rem;
   color: var(--white);
   border-radius: 10px;
+  text-decoration:none;
 }
 
 .button2 {

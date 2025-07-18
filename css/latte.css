@@ -10,31 +10,35 @@
   --lightblue: #cadbf8;
   --mainfont: "Poppins", sans-serif;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .top-nav {
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 
 .latte {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: var(--white);
+  margin: 0rem;
+  padding: 0rem;
+  align-items: center;
 }
 
 .latte h2 {
   grid-column: 2/3;
   padding-left: 2rem;
   font-weight: normal;
-  
 }
 
 .latte img {
   grid-column: 1/2;
   max-width: 100%;
   grid-row: 1/4;
-  padding: 1rem;
 }
 
 .latte p {
@@ -52,15 +56,23 @@
 }
 
 header {
-  background: #06327d;
-  border-bottom: var(--sunglow) solid 0.5rem;
-  display: inline-block;
+  background-color: var(--catalina);
+  border-bottom: 10px solid var(--sunglow);
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3rem;
 }
 header h1 {
   color: var(--white);
   font-weight: normal;
 }
-
+h1 {
+  font-size: 3rem;
+  line-height: 1.1667;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -71,21 +83,25 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 body {
   font-family: var(--mainfont);
-  font-size: 1rem;
-  line-height: 1.5;
   padding: 0;
   margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: var(--catalina);
 }
 footer {
-  background-color: var(--catalina);
   color: var(--white);
   text-align: center;
-  padding-bottom: 1 rem;
-  border-top: var(--sunglow) 0.5rem solid;
+  padding: 3rem;
+  border-top: 10px solid var(--sunglow);
+  background-color: var(--catalina);
 }
 
 @media (min-width: 1000px) {
