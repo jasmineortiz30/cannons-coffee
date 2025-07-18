@@ -17,7 +17,7 @@
 }
 
 body {
-font-family: var(--mainfont);
+  font-family: var(--mainfont);
   padding: 0;
   margin: 0;
   font-size: 1.125rem;
@@ -29,6 +29,29 @@ font-family: var(--mainfont);
   align-items: center;
   gap: 1rem;
 }
+
+h1,
+h2,
+h3 {
+  line-height: 1.667;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--white);
+}
+
+h2 {
+  fon1.1667t-size: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
 .logo {
   height: 80px;
   justify-content: space-between;
@@ -80,23 +103,6 @@ main {
   background-color: var(--white);
 }
 
-h1 {
-  font-size: 2.5;
-  color: var(--white);
-  margin: o;
-}
-
-h2 {
-  font-size: 2.5rem;
-  padding: 2rem;
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 1rem;
-}
-
 .grid {
   background-color: var(--lightblue);
   display: grid;
@@ -139,11 +145,6 @@ footer {
   padding: 3rem;
   border-top: 10px solid var(--sunglow);
   background-color: var(--catalina);
-}
-
-.grid {
-  display: grid;
-  gap: 4rem;
 }
 
 @media (min-width: 650px) {
