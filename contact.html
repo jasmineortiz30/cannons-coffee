@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/latte.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <p><a href=""><img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee Logo"
+                        class="logo" /></a></p>
+            <h1>CANNONS COFFEE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="latte.html">COFFEE</a></li>
+                <li><a href="https://starbucks.com/" target="_blank">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <div class="form-container">
+            <div class="heading">
+                <h1>Contact Cannons Coffee</h1>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="000-000-0000" required />
+
+                <label for="comments">Any Comments?:</label><br>
+                <textarea id="comments" name="comments" rows="3" cols="20"></textarea>
+
+                <label for="flavor">Please choose a favorite coffee flavor below:</label>
+                <select id="flavor" name="flavor" required>
+                    <option value="">--Choose one--</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="latte">Latte</option>
+                    <option value="Espresso">Espresso</option>
+                </select>
+
+                <fieldset>
+                    <h3>Interested In?</h3>
+                    <input type="radio" id="coffee" name="" value="purchasing-coffee" />
+                    <label for="coffee">Purchasing Coffee</label>
+                    <input type="radio" id="job" name="interest" value="seeking- employment" />
+                    <label for="work">Seeking Employment</label>
+
+                </fieldset>
+
+                <div class="container">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <p><a href="img"><img src="https://assets.codepen.io/296057/logo-footer.png"
+                    alt="Cannons Coffee Logo for footer" class="footer-logo" /></a></p>
+        <p> 2024 Cannons Coffee. All Rights Reserved.</p>
+    </footer>
+    <script src="js/custom-contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+root {
+  --font: poppins;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2b70e4;
+  --drkGray: #333333;
+}
+
+body {
+  font-family: var(--font);
+  background-color: blue;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 4rem 3rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 2rem;
+  text-align: center;
+  color: blue;
+}
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  border: 5px solid blue;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--font);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+fieldset {
+  margin: 1rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+fieldset input {
+  width: 10%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+}
