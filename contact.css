@@ -7,6 +7,65 @@
   --blue: #2b70e4;
   --drkGray: #333333;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-color: blue;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3rem;
+}
+header h1 {
+  color: var(--white);
+  font-weight: normal;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  color: var(--sunglow);
+}
 
 body {
   font-family: var(--font);
@@ -19,7 +78,6 @@ body {
   justify-content: center;
   min-height: 100%;
 }
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -68,11 +126,6 @@ fieldset input {
   width: 10%;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 button {
   justify-content: center;
@@ -89,3 +142,6 @@ button:hover {
   background-color: white;
   color: black;
 }
+
+
+

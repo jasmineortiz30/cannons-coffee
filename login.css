@@ -1,11 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-root {
-  --font: poppins;
-  --white: #ffffff;
+:root {
   --black: #000000;
-  --blue: #2b70e4;
-  --drkGray: #333333;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --lightblue: #cadbf8;
+  --mainfont: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: blue;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 3rem;
+}
+header h1 {
+  color: var(--white);
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  color: var(--sunglow);
 }
 
 body {
@@ -68,19 +133,18 @@ fieldset input {
 }
 
 button {
-  justify-content: center;
-  padding: 1rem;
+  
+  width: 80%;
   margin: 2rem;
+  padding: 0.8rem;
   background-color: blue;
-  color: white;
-  font-size: 1rem;
-  border: none;
+  color: var(--white);
   border-radius: 10px;
+  font-size: var(--font-size);
+  border: none;
 }
 
 button:hover {
   background-color: white;
   color: black;
-}
-
 }
