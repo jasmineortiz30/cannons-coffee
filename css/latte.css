@@ -15,7 +15,10 @@
   margin: 0 auto;
 }
 
-
+.top-nav {
+  display: flex;
+  justify-content: center;
+}
 
 .latte {
   display: grid;
@@ -23,7 +26,6 @@
   background: var(--white);
   margin: 0rem;
   padding: 0rem;
-  align-items: center;
 }
 
 .latte h2 {
