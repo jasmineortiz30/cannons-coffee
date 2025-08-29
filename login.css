@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 body {
-  font-family: var(--font);
+  font-family: var(--mainfont);
   background-color: blue;
   margin: 0;
   padding: 20px;
